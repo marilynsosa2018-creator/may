@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+.npm/
+
+# Playwright reports and logs
+playwright-report/
+test-results/
+playwright/.local-browsers/
+.playwright/
+*.webm
+*.png
+*.jpeg
+*.jpg
