@@ -3,257 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COINSA | Logística, Almacenaje de Contenedores y Construcción en Guatemala</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="COINSA es su socio estratégico y confiable en Guatemala para servicios de almacenaje de contenedores en el Recinto Portuario de la Empresa Portuaria Quetzal, construcción de carreteras de alta calidad y torres de telefonía.">
-  <meta name="keywords" content="COINSA, logística, almacenaje de contenedores, Empresa Portuaria Quetzal, Puerto Quetzal, construcción de carreteras, torres de telefonía, telecomunicaciones, infraestructura vial, Guatemala">
-  <meta name="author" content="COINSA">
-
-  <!-- Open Graph Meta Tags (Social Media Integration) -->
-  <meta property="og:title" content="COINSA | Logística, Almacenaje de Contenedores y Construcción en Guatemala">
-  <meta property="og:description" content="Ofrecemos soluciones integrales en logística, almacenaje de contenedores, construcción vial e infraestructura de telecomunicaciones en Guatemala.">
-  <meta property="og:image" content="assets/images/logo-coinsa.jpg">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="assets/images/logo-coinsa.jpg">
-
-  <!-- Google Fonts Connection and Import -->
+  <title>Selección de Empresa | Gemilaza y COINSA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f4f6f9;
+      color: #1c1c1c;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #0b2545;
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      border: 2px solid transparent;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      border-color: #0b2545;
+    }
+    .card-logo {
+      height: 70px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #0b2545;
+    }
+    .card-desc {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      background-color: #0b2545;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+    .card:hover .btn {
+      background-color: #134074;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Bienvenido</h1>
+    <p class="subtitle">Por favor seleccione el sitio web al que desea ingresar:</p>
 
-  <!-- Header / Navbar -->
-  <header class="header">
-    <div class="container header-container">
-      <a href="#inicio" class="logo-link" aria-label="COINSA Inicio">
-        <img src="assets/images/logo-coinsa.jpg" alt="COINSA Logo" class="logo-img">
+    <div class="cards-grid">
+      <a href="./gemilaza/" class="card">
+        <img src="./gemilaza/assets/images/logo.svg" alt="Gemilaza Logo" class="card-logo">
+        <h2 class="card-title">Gemilaza</h2>
+        <p class="card-desc">Venta y transporte de melaza de alta calidad en Escuintla, Guatemala.</p>
+        <span class="btn">Ir a Gemilaza &rarr;</span>
       </a>
 
-      <!-- Hamburger Menu (Mobile Toggle) -->
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-
-      <!-- Navigation Menu -->
-      <nav class="nav-menu" id="primary-navigation" role="navigation">
-        <ul class="nav-list">
-          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-          <li><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
-        </ul>
-        <!-- CTA inside mobile navigation and visible in desktop header -->
-        <div class="nav-cta">
-          <a href="tel:+50222592472" class="btn btn-primary btn-header">
-            <span class="btn-icon">📞</span> Llamar: 2259-2472
-          </a>
-        </div>
-      </nav>
+      <a href="./coinsa/" class="card">
+        <img src="./coinsa/assets/images/logo-coinsa.jpg" alt="COINSA Logo" class="card-logo">
+        <h2 class="card-title">COINSA</h2>
+        <p class="card-desc">Logística, almacenaje de contenedores en EPQ y construcción de infraestructura.</p>
+        <span class="btn">Ir a COINSA &rarr;</span>
+      </a>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section">
-      <!-- Decorative background (baja opacidad, managed by CSS) -->
-      <div class="hero-bg-decoration"></div>
-
-      <div class="container hero-container">
-        <div class="hero-content">
-          <span class="hero-tagline animate-fade-in">Solidez, Confianza y Profesionalismo Portuario</span>
-          <h1 class="hero-title animate-fade-in">Soluciones logísticas y de construcción con presencia portuaria</h1>
-          <p class="hero-description animate-fade-in">
-            En COINSA lideramos el desarrollo de infraestructura vial, telecomunicaciones y almacenamiento logístico seguro. Conectamos proyectos de gran envergadura y garantizamos la máxima confiabilidad operativa en el Recinto de la Empresa Portuaria Quetzal.
-          </p>
-
-          <div class="hero-ctas animate-fade-in">
-            <a href="tel:+50222592472" class="btn btn-primary btn-lg" aria-label="Llamar a COINSA al teléfono 2259-2472">
-              <span class="btn-icon">📞</span> Solo Llamadas: 2259-2472
-            </a>
-            <a href="mailto:coinsa99.gt@gmail.com" class="btn btn-secondary btn-lg" aria-label="Enviar correo a coinsa99.gt@gmail.com">
-              <span class="btn-icon">✉️</span> coinsa99.gt@gmail.com
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-media animate-fade-in">
-          <!-- ESPACIO RESERVADO PARA FOTOGRAFÍA: Operaciones de COINSA -->
-          <div class="image-placeholder hero-placeholder" aria-label="Foto general de operaciones de COINSA - pendiente de reemplazo">
-            <div class="placeholder-icon">⚓</div>
-            <div class="placeholder-text">Foto de Operaciones — Pendiente de reemplazo</div>
-            <div class="placeholder-size">Medida recomendada: 1600x900px o proporción 16:9</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Nuestros Servicios -->
-    <section id="servicios" class="services-section bg-alt scroll-animate">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-subtitle">Líneas de Negocio</span>
-          <h2 class="section-title">Nuestros Servicios</h2>
-          <div class="section-divider"></div>
-          <p class="section-intro">Brindamos excelencia operativa en tres sectores clave para el desarrollo comercial e industrial del país, respaldados por un riguroso estándar de calidad.</p>
-        </div>
-
-        <div class="services-grid">
-          <!-- Servicio 1: Construcción de Carreteras -->
-          <div class="service-card">
-            <!-- PLACEHOLDER PARA FOTOGRAFÍA DE CARRETERAS -->
-            <!-- El cliente podrá reemplazar esta imagen simplemente modificando el 'src' -->
-            <div class="image-placeholder service-card-media" aria-label="Foto de construcción de carreteras - pendiente">
-              <div class="placeholder-icon">🚧</div>
-              <div class="placeholder-text">Foto de Carreteras - Pendiente</div>
-              <div class="placeholder-size">Recomendado: 800x500px</div>
-            </div>
-
-            <div class="service-card-content">
-              <div class="service-icon-container">
-                <span class="service-icon">🛣️</span>
-              </div>
-              <h3 class="service-card-title">Construcción de Carreteras</h3>
-              <p class="service-card-description">
-                Especializados en infraestructura vial de alta resistencia. Diseñamos y ejecutamos proyectos de pavimentación y movimiento de tierras bajo estrictos estándares técnicos, asegurando durabilidad, óptimo desempeño y cumplimiento riguroso de los plazos establecidos.
-              </p>
-            </div>
-          </div>
-
-          <!-- Servicio 2: Construcción de Torres de Telefonía -->
-          <div class="service-card">
-            <!-- PLACEHOLDER PARA FOTOGRAFÍA DE TORRES DE TELEFONÍA -->
-            <div class="image-placeholder service-card-media" aria-label="Foto de construcción de torres de telefonía - pendiente">
-              <div class="placeholder-icon">📶</div>
-              <div class="placeholder-text">Foto de Torres - Pendiente</div>
-              <div class="placeholder-size">Recomendado: 800x500px</div>
-            </div>
-
-            <div class="service-card-content">
-              <div class="service-icon-container">
-                <span class="service-icon">🗼</span>
-              </div>
-              <h3 class="service-card-title">Construcción de Torres de Telefonía</h3>
-              <p class="service-card-description">
-                Desarrollo integral de infraestructura para telecomunicaciones. Ofrecemos precisión técnica avanzada en ingeniería, cimentación y montaje seguro de estructuras metálicas de gran altura, garantizando altos estándares de seguridad ocupacional e industrial.
-              </p>
-            </div>
-          </div>
-
-          <!-- Servicio 3: Almacenaje de Contenedores -->
-          <div class="service-card">
-            <!-- PLACEHOLDER PARA FOTOGRAFÍA DE ALMACENAJE DE CONTENEDORES -->
-            <div class="image-placeholder service-card-media" aria-label="Foto de almacenaje de contenedores - pendiente">
-              <div class="placeholder-icon">🚢</div>
-              <div class="placeholder-text">Foto de Contenedores - Pendiente</div>
-              <div class="placeholder-size">Recomendado: 800x500px</div>
-            </div>
-
-            <div class="service-card-content">
-              <div class="service-icon-container">
-                <span class="service-icon">🏗️</span>
-              </div>
-              <h3 class="service-card-title">Almacenaje de Contenedores</h3>
-              <p class="service-card-description">
-                Soluciones logísticas confiables en el Recinto de la Empresa Portuaria Quetzal (EPQ). Contamos con espacios estratégicos, seguros y equipados para el resguardo eficiente y la correcta manipulación de contenedores, optimizando sus flujos de importación y exportación.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="contact-section scroll-animate">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-subtitle">Canales de Atención Directos</span>
-          <h2 class="section-title text-white">Contáctanos</h2>
-          <div class="section-divider border-white"></div>
-          <p class="section-intro text-white" style="opacity: 0.85;">Comuníquese directamente con nuestro equipo para cotizaciones, programación operativa o consultas generales.</p>
-        </div>
-
-        <div class="contact-box-container">
-          <div class="contact-info-card">
-            <h3 class="contact-card-title">Información de Contacto</h3>
-            <p class="contact-card-intro">Con el objetivo de brindarle una atención ágil y profesional, ponemos a su disposición nuestros canales de comunicación directa:</p>
-
-            <div class="contact-info-list">
-              <!-- Teléfono -->
-              <div class="contact-info-item">
-                <div class="contact-info-icon">📞</div>
-                <div class="contact-info-body">
-                  <h4>Teléfono de Contacto (Solo Llamadas)</h4>
-                  <p><a href="tel:+50222592472" class="contact-highlight-link">+502 2259-2472</a></p>
-                  <span class="contact-note">* Aclaración importante: Este número está habilitado exclusivamente para recibir llamadas de voz directas. No dispone de servicio de mensajería de WhatsApp.</span>
-                </div>
-              </div>
-
-              <!-- Correo -->
-              <div class="contact-info-item">
-                <div class="contact-info-icon">✉️</div>
-                <div class="contact-info-body">
-                  <h4>Correo Electrónico</h4>
-                  <p><a href="mailto:coinsa99.gt@gmail.com" class="contact-highlight-link">coinsa99.gt@gmail.com</a></p>
-                  <span class="contact-note">* Envíenos sus especificaciones o solicitudes de cotización por este medio para una respuesta formal por escrito.</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Action buttons -->
-            <div class="contact-buttons-row">
-              <a href="tel:+50222592472" class="btn btn-call" aria-label="Llamar al teléfono directo de COINSA 2259-2472">
-                <span class="btn-icon">📞</span> LLAMAR AL 2259-2472
-              </a>
-              <a href="mailto:coinsa99.gt@gmail.com" class="btn btn-email" aria-label="Enviar correo a coinsa99.gt@gmail.com">
-                <span class="btn-icon">✉️</span> ENVIAR CORREO ELECTRÓNICO
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <img src="assets/images/logo-coinsa.jpg" alt="COINSA Logo" class="logo-footer">
-          <p class="footer-slogan">Solidez, confianza y profesionalismo en logística portuaria e infraestructura vial y de telecomunicaciones.</p>
-        </div>
-
-        <div class="footer-info">
-          <h4>Contacto Rápido</h4>
-          <p>📞 Teléfono: <a href="tel:+50222592472" class="footer-link">2259-2472</a> (Solo llamadas, sin WhatsApp)</p>
-          <p>✉️ Correo: <a href="mailto:coinsa99.gt@gmail.com" class="footer-link">coinsa99.gt@gmail.com</a></p>
-        </div>
-
-        <div class="footer-links-col">
-          <h4>Navegación</h4>
-          <ul class="footer-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom text-center">
-        <p>&copy; 2026 COINSA. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Custom JavaScript -->
-  <script src="js/main.js"></script>
+    <footer>
+      &copy; 2026 Todos los derechos reservados.
+    </footer>
+  </div>
 </body>
 </html>

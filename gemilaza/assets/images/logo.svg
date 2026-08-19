@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="100%" height="100%">
+  <defs>
+    <!-- Define standard shadows and gradients if needed -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Left: The Graphic Mark (Engranajes en tonos azul-púrpura sobre hojas de caña en verde menta) -->
+  <g id="graphic-mark" transform="translate(10, 0)">
+    <!-- Cane Leaves (Hojas de caña) in Mint Green (#94d8b9) -->
+    <!-- Leaf 1 (Left bending) -->
+    <path d="M 60 120 C 40 90, 20 70, 15 40 C 25 50, 45 75, 65 100" fill="#94d8b9" opacity="0.95" />
+    <!-- Leaf 2 (Right bending) -->
+    <path d="M 75 120 C 95 85, 115 65, 125 35 C 115 45, 95 70, 70 100" fill="#94d8b9" opacity="0.95" />
+    <!-- Leaf 3 (Center vertical) -->
+    <path d="M 68 125 C 65 80, 60 50, 58 15 C 68 45, 72 80, 70 125" fill="#94d8b9" opacity="0.9" />
+
+    <!-- Gear 1: Large Gear in Blue-Purple (#2f2e75) -->
+    <g transform="translate(50, 95)" fill="#2f2e75">
+      <!-- Outer teeth -->
+      <circle cx="0" cy="0" r="24" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(30)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(60)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(90)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(120)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(150)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(180)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(210)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(240)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(270)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(300)" />
+      <path d="M -6 -32 L 6 -32 L 4 -24 L -4 -24 Z" transform="rotate(330)" />
+      <!-- Inner hole for gear feel -->
+      <circle cx="0" cy="0" r="12" fill="#ffffff" />
+      <!-- Axle center pin -->
+      <circle cx="0" cy="0" r="6" />
+    </g>
+
+    <!-- Gear 2: Small Gear (interlocking) in lighter blue-purple/accent (#7ea1cc) -->
+    <g transform="translate(86, 75)" fill="#7ea1cc">
+      <circle cx="0" cy="0" r="16" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(45)" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(90)" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(135)" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(180)" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(225)" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(270)" />
+      <path d="M -4 -22 L 4 -22 L 3 -16 L -3 -16 Z" transform="rotate(315)" />
+      <!-- Inner hole -->
+      <circle cx="0" cy="0" r="8" fill="#ffffff" />
+      <!-- Center pin -->
+      <circle cx="0" cy="0" r="4" fill="#2f2e75" />
+    </g>
+  </g>
+
+  <!-- Right: Logo Text "GEMILAZA" in thick manuscrita/friendly script style -->
+  <!-- Note: We'll style it to look like a thick handwritten script using path curves or stylized text -->
+  <g transform="translate(145, 95)">
+    <!-- Let's write stylized GEMILAZA text using path shapes for maximum compatibility and handwritten style -->
+    <!-- G -->
+    <path d="M 45 -45 C 10 -45, -5 -25, -5 0 C -5 22, 12 32, 35 32 C 55 32, 60 18, 60 2 L 30 2 L 30 -6 L 68 -6 L 68 12 C 68 28, 52 40, 32 40 C 5 40, -15 25, -15 -2 C -15 -30, 8 -53, 48 -53 C 65 -53, 76 -44, 82 -35 L 68 -24 C 64 -35, 56 -45, 45 -45 Z" fill="#2f2e75" />
+
+    <!-- E -->
+    <path d="M 85 -48 L 122 -48 L 122 -38 L 97 -38 L 97 -15 L 118 -15 L 118 -5 L 97 -5 L 97 18 L 124 18 L 124 28 L 85 28 Z" fill="#2f2e75" />
+
+    <!-- M -->
+    <path d="M 135 28 L 135 -48 L 149 -48 L 165 -12 L 181 -48 L 195 -48 L 195 28 L 183 28 L 183 -25 L 169 7 L 161 7 L 147 -25 L 147 28 Z" fill="#2f2e75" />
+
+    <!-- I -->
+    <path d="M 205 -48 L 217 -48 L 217 28 L 205 28 Z" fill="#2f2e75" />
+
+    <!-- L -->
+    <path d="M 228 -48 L 240 -48 L 240 18 L 262 18 L 262 28 L 228 28 Z" fill="#2f2e75" />
+
+    <!-- A -->
+    <path d="M 285 -48 L 298 -48 L 320 28 L 307 28 L 302 10 L 281 10 L 276 28 L 263 28 Z M 299 0 L 291 -28 L 284 0 Z" fill="#2f2e75" />
+
+    <!-- Z -->
+    <path d="M 326 -48 L 358 -48 L 358 -38 L 338 18 L 359 18 L 359 28 L 325 28 L 325 18 L 345 -38 L 326 -38 Z" fill="#2f2e75" />
+
+    <!-- A -->
+    <path d="M 382 -48 L 395 -48 L 417 28 L 404 28 L 399 10 L 378 10 L 373 28 L 360 28 Z M 396 0 L 388 -28 L 381 0 Z" fill="#2f2e75" />
+  </g>
+
+  <!-- Slogan or Subtitle (Escuintla, Guatemala) -->
+  <text x="155" y="130" font-family="'Quicksand', sans-serif" font-size="14" font-weight="600" fill="#7ea1cc" letter-spacing="3">ESCUINTLA, GUATEMALA</text>
+</svg>
